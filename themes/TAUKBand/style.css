@@ -8,412 +8,432 @@ Description: This theme has been developed exclusively for the use of TAUK & the
 Version: 1.0.1455918314
 Updated: 2016-02-19 21:45:14
 */
-
 /* General, Layout & Fonts */
-
 #inner-header-wrap {
-    margin-top: -3px;
-}
+  margin-top: 18px; }
 
-.align-thumbnail img { margin: 0 auto !important; width: 100%; }
+.align-thumbnail img {
+  margin: 0 auto !important;
+  width: 100%; }
 
-h5 { line-height: 14px; }
+h5 {
+  line-height: 14px; }
 
-h4.not-bold { font-weight: 300; }
+h4.not-bold {
+  font-weight: 300; }
 
-.aligncenter, .alignleft, .alignright, img.aligncenter, img.alignleft, img.alignright { margin-top: 0; margin-bottom: 0; }
+.aligncenter, .alignleft, .alignright, img.aligncenter, img.alignleft, img.alignright {
+  margin-top: 0;
+  margin-bottom: 0; }
 
-.tickets { opacity: .7; margin-right: -5px !important;}
-.tickets:hover { opacity: 1; }
+.tickets {
+  opacity: .7;
+  margin-right: -5px !important; }
 
+.tickets:hover {
+  opacity: 1; }
 
-#sneaky { /* displays nothing, hide elements using <div id="sneaky">[CONTENT TO HIDE]</div> */
-	display:none;
-}
+#sneaky {
+  /* displays nothing, hide elements using <div id="sneaky">[CONTENT TO HIDE]</div> */
+  display: none; }
 
 .videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-}
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
 
-.clear { /* clear after floats so your formatting doesn't get thrown off */
-	clear:both;
-}
+.clear {
+  /* clear after floats so your formatting doesn't get thrown off */
+  clear: both; }
 
-#two-column { /* 2 columns side by side */ 
-	width:48%;
-	margin:0 1%;
-	float:left;
-}
+#two-column {
+  /* 2 columns side by side */
+  width: 48%;
+  margin: 0 1%;
+  float: left; }
 
-#three-column, #header-three-column { /* 3 columns side by side */
-	width:30.3%;
-	margin:0 1.5%;
-	float:left;
-}
+#three-column, #header-three-column {
+  /* 3 columns side by side */
+  width: 30.3%;
+  margin: 0 1.5%;
+  float: left; }
 
 #logo-three-column {
-	width: 30.3%;
-	margin: 0 1.5%;
-	float:left;
-}
+  width: 30.3%;
+  margin: 0 1.5%;
+  float: left; }
 
-#three-column-shows, #widget-three-column { width: 32.3%; margin-left:1%; float:left; }
+#three-column-shows, #widget-three-column {
+  width: 32.3%;
+  margin-left: 1%;
+  float: left; }
 
-#twothirds-column-shows, #widget-twothirds-column { width: 65.66%; margin-right:1%; float:left; }
+#twothirds-column-shows, #widget-twothirds-column {
+  width: 65.66%;
+  margin-right: 1%;
+  float: left; }
 
-#four-column, #header-four-column { /* 4 columns side by side */
-	width: 23%;
-	margin:0 1%;
-	float:left;
-}
+#four-column, #header-four-column {
+  /* 4 columns side by side */
+  width: 23%;
+  margin: 0 1%;
+  float: left; }
 
-#widget-three-column, #widget-twothirds-column { line-height: 18px; }
+#widget-three-column, #widget-twothirds-column {
+  line-height: 18px; }
 
-#five-column, #header-five-column { /* 5 columns side by side */
-	width:18%;
-	margin:0 1%;
-	float:left;
-}
+#five-column, #header-five-column {
+  /* 5 columns side by side */
+  width: 18%;
+  margin: 0 1%;
+  float: left; }
 
-#six-column, #header-six-column { /* 6 columns side-by-side */
-	width: 15%;
-	margin: 0 .8333%;
-	float:left;
-}
+#six-column, #header-six-column {
+  /* 6 columns side-by-side */
+  width: 15%;
+  margin: 0 .8333%;
+  float: left; }
 
-#twothirds-column { /* a 2/3s column - takes up 66% of the available space, can be coupled with 1 #three-column element) */
-	width:63.6%;
-	margin: 0 1.5%;
-	float:left;
-}
+#twothirds-column {
+  /* a 2/3s column - takes up 66% of the available space, can be coupled with 1 #three-column element) */
+  width: 63.6%;
+  margin: 0 1.5%;
+  float: left; }
 
-#threequarters-column { /* a 3/4s column - takes up 75% of the available space, can be coupled with 1 #four-column element) */
-	width:73%;
-	margin:0 1%;
-	float:left;
-}
+#threequarters-column {
+  /* a 3/4s column - takes up 75% of the available space, can be coupled with 1 #four-column element) */
+  width: 73%;
+  margin: 0 1%;
+  float: left; }
 
 /* Header */
-
 header[role="banner"] {
-    width: 100%;
-    margin-bottom: 50px;
-    position: fixed;
-    z-index: 100;
-}
+  width: 100%;
+  margin-bottom: 50px;
+  position: fixed;
+  z-index: 100; }
 
 #wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: -23px auto -70px;
-}
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: -23px auto -70px; }
 
-.fade { opacity: .7; }
+.fade {
+  opacity: .7; }
 
 #inner-header {
-    max-width: 124.4rem;
-}
+  max-width: 124.4rem; }
 
 .social-icon {
-	width: 12%;
-	margin: 10px 1.14% 5px;
-	float:right;
-	opacity: .7;
-}
+  width: 12%;
+  margin: 10px 1.14% 5px;
+  float: right;
+  opacity: .7; }
 
 .social-icon:hover {
-	opacity: 1;
-}
+  opacity: 1; }
 
-.fade:hover { opacity: 1; }
+.fade:hover {
+  opacity: 1; }
 
-#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link { font-size: 22px; }
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+  font-size: 22px; }
 
 /* Pages */
+#content {
+  padding-top: 220px; }
 
-#content { padding-top: 220px; }
+.widget-title a {
+  color: white !important;
+  text-decoration: none; }
 
-.widget-title a { color:white !important; text-decoration:none; }
+.post-content h4, .post-content h2 {
+  margin: 0 0 .4rem 0; }
 
-.post-content h4, .post-content h2 { margin: 0 0 .4rem 0; }
+.buyalbum {
+  width: 30px;
+  margin-right: 3px;
+  float: left;
+  opacity: .7; }
 
-.buyalbum { width: 30px; margin-right:3px; float:left; opacity: .7; }
-.buyalbum:hover { opacity: 1; }
+.buyalbum:hover {
+  opacity: 1; }
 
 .collection .head .description {
-    display:none !important;
-}
+  display: none !important; }
 
 .post-content img {
-    margin: 0;
-}
+  margin: 0; }
 
-.post-content li { margin: 0; }
+.post-content li {
+  margin: 0; }
 
-.post-content ul { margin: 0; }
+.post-content ul {
+  margin: 0; }
 
-.post-content h3 { margin: 0; }
+.post-content h3 {
+  margin: 0; }
 
-.single-show-title { margin-bottom: 10px; font-size: 38px; }
+.single-show-title {
+  margin-bottom: 10px;
+  font-size: 38px; }
 
-#nav-below { margin-top: 10px; }
+#nav-below {
+  margin-top: 10px; }
 
-#press-quotes { width: 500px; height: 600px; overflow-y:scroll; }
+#press-quotes {
+  width: 500px;
+  height: 600px;
+  overflow-y: scroll; }
 
-#main { margin-bottom: 40px; }
+#main {
+  margin-bottom: 40px; }
 
 .post-content ul > li::before {
-    content: "";
-}
+  content: ""; }
 
-.form-title { display:none; }
+.form-title {
+  display: none; }
 
 .post-content {
-    padding:10px 3%;
-}
+  padding: 10px 3%; }
 
 .post-content p {
-    margin: 0;
-}
+  margin: 0; }
 
-.bx-wrapper img { width:100% !important; margin: 0 !important; }
+.bx-wrapper img {
+  width: 100% !important;
+  margin: 0 !important; }
 
-.page-header, .entry-header { margin: 0; padding: 2rem; }
+.page-header, .entry-header {
+  margin: 0;
+  padding: 2rem; }
 
-.entry-header { background:none; }
+.entry-header {
+  background: none; }
 
-.odd { background: lightgrey; border-bottom:4px solid grey;}
-.even { background: white; border-bottom:4px solid grey; }
+.odd {
+  background: lightgrey;
+  border-bottom: 4px solid grey; }
+
+.even {
+  background: white;
+  border-bottom: 4px solid grey; }
+
 article[id*="post-"] {
-    word-wrap: break-word;
-    margin-bottom: 0;
-}
+  word-wrap: break-word;
+  margin-bottom: 0; }
 
 #alt-sidebar {
-    width: 96%;
-    margin: 0 auto;
-    padding: 180px 2% 0;
-    max-width: 1244px;
-    max-width: 124.4rem;
-}
+  width: 96%;
+  margin: 0 auto;
+  padding: 180px 2% 0;
+  max-width: 1244px;
+  max-width: 124.4rem; }
 
 #alt-sidebar .widget > div {
-	padding: 0;
-}
+  padding: 0; }
 
-#alt-sidebar div.widget-title { padding: 4px; text-align:center; }
+#alt-sidebar div.widget-title {
+  padding: 4px;
+  text-align: center; }
 
 body.custom-background {
-    background-image: url('https://www.taukband.com/wp-content/uploads/2018/01/background-TAUK.png') !important;
-    background-repeat: no-repeat !important;
-background-position: center center;
-background-attachment: fixed !important;
-	background-size: cover !important;
-}
+  background-image: url("https://www.taukband.com/wp-content/uploads/2018/01/background-TAUK.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center;
+  background-attachment: fixed !important;
+  background-size: cover !important; }
 
 .epyt-gallery iframe {
-    margin-bottom: 0;
-    width: 80%;
-    height: 400px;
-    margin: 0 auto;
-}
+  margin-bottom: 0;
+  width: 80%;
+  height: 400px;
+  margin: 0 auto; }
 
 #homepage-tour-widget {
-	width: 100%;
-	height: 348px;
-	overflow-y: scroll;
-}
+  width: 100%;
+  height: 348px;
+  overflow-y: scroll; }
 
 /* Sidebar & Widgets */
+.red-date {
+  color: #900; }
 
-.red-date { color: #900; }
+.white-date {
+  color: white;
+  font-size: 18px; }
 
-.white-date { color:white; font-size:18px; }
+.white-openbands {
+  color: white;
+  font-size: 14px;
+  font-weight: 300; }
 
-.white-openbands { color:white; font-size: 14px; font-weight:300; }
+.tour-widget {
+  padding: 5px;
+  box-sizing: border-box; }
 
-.tour-widget { padding: 5px; box-sizing:border-box; }
+.text-widget {
+  height: 348px;
+  overflow-y: scroll; }
 
-.text-widget { height: 348px; overflow-y:scroll; }
+.tickets-widget {
+  opacity: .8; }
 
-.tickets-widget { opacity: .8; }
-.tickets-widget:hover { opacity: 1; }
+.tickets-widget:hover {
+  opacity: 1; }
 
 #alt-sidebar .rpwe-block ul {
-    list-style: none !important;
-    margin-left: 0 !important;
-    padding: 5px !important;
-	height: 333px;
-	overflow-y:scroll;
-}
+  list-style: none !important;
+  margin-left: 0 !important;
+  padding: 5px !important;
+  height: 333px;
+  overflow-y: scroll; }
 
-#alt-sidebar .widget { height: 385px; }
+#alt-sidebar .widget {
+  height: 385px; }
 
-#sidebar div.widget-title { text-align:center; }
+#sidebar div.widget-title {
+  text-align: center; }
 
-#sidebar .widget > div { padding: 0; }
+#sidebar .widget > div {
+  padding: 0; }
 
 /* Footer */
-
 footer[role="contentinfo"], .push {
-    margin-bottom: -25px;
-}
+  margin-bottom: -25px; }
 
-.credits { background:#e3e3e3; padding: 20px 0; }
+.credits {
+  background: #e3e3e3;
+  padding: 20px 0; }
 
 #site-generator {
-    padding-bottom:10px;
-}
+  padding-bottom: 10px; }
 
 .widgets_on_page ul, .widgets_on_page ul li {
-    list-style: square;
-    background: none;
-	margin-left:5px;
-
-}
+  list-style: square;
+  background: none;
+  margin-left: 5px; }
 
 h2.widgettitle {
-	padding-bottom: 5px;
-	border-bottom: 2px solid grey;
-	margin-bottom: 5px;
-}
+  padding-bottom: 5px;
+  border-bottom: 2px solid grey;
+  margin-bottom: 5px; }
 
 .footer-widget-box {
-	max-width:124.4rem;
-	margin: 20px auto 0;
-	text-align:left !important;	
-}
+  max-width: 124.4rem;
+  margin: 20px auto 0;
+  text-align: left !important; }
 
 /* Theme Modification - modify elements from the Parent Theme Here */
-
 /* Plugin Fixes - modify elements from Plugins You Have Installed Here
-   Hint: Try and keep it organized (e.g. insert the [plugin-name] in a comment 
+   Hint: Try and keep it organized (e.g. insert the [plugin-name] in a comment
    above the CSS modifications)
 */
+.fancybox-title-over {
+  display: none !important; }
 
-.fancybox-title-over { display:none !important; }
+.fb-page {
+  width: 100% !important; }
 
-.fb-page { width: 100% !important; }
-
-.bx-wrapper .bx-pager { display:none; }
+.bx-wrapper .bx-pager {
+  display: none; }
 
 .bx-wrapper .bx-viewport {
-    -moz-box-shadow: 0 0 5px #ccc;
-    -webkit-box-shadow: 0 0 5px #ccc;
-    box-shadow: 0 0 0px #ccc;
-    border: 0px solid #fff;
-    left: 0px;
-    background: #fff;
-    -webkit-transform: translatez(0);
-    -moz-transform: translatez(0);
-    -ms-transform: translatez(0);
-    -o-transform: translatez(0);
-    transform: translatez(0);
-}
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 0px #ccc;
+  border: 0px solid #fff;
+  left: 0px;
+  background: #fff;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0); }
 
-.bx-prev, .bx-next { display:none; }
+.bx-prev, .bx-next {
+  display: none; }
 
 .bx-wrapper {
-    position: relative;
-    margin: 0 auto 0px !important;
-    padding: 0;
-    zoom: 1;
-}
+  position: relative;
+  margin: 0 auto 0px !important;
+  padding: 0;
+  zoom: 1; }
 
-.rpwe-block h3{
-background: none !important;
-clear: none;
-margin-bottom: 0 !important;
-margin-top: 0 !important;
-font-weight: bold !important;
-font-size: 12px !important;
-line-height: 1.5em;
-}
+.rpwe-block h3 {
+  background: none !important;
+  clear: none;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  font-weight: bold !important;
+  font-size: 12px !important;
+  line-height: 1.5em; }
 
-.fetched_tweets { padding: 0 !important; height: 348px; overflow-y:scroll; }
+.fetched_tweets {
+  padding: 0 !important;
+  height: 348px;
+  overflow-y: scroll; }
 
 /* Mobile CSS */
-
 @media screen and (max-width: 1150px) {
+  #alt-sidebar .widget {
+    width: 40%;
+    margin: 4% 5% 6%; } }
+@media screen and (max-width: 768px) {
+  /* for Tablets in Portrait Mode */
+  #four-column, #five-column {
+    /* 4 & 5 columns side by side need to become single columns or elements just get too small! */
+    width: 48%;
+    margin: 0 1%;
+    float: none; }
 
-	#alt-sidebar .widget {
-    		width: 40%;
-		margin: 4% 5% 6%;
-	}
+  #header-three-column {
+    /* 3 columns side by side */
+    width: 48%;
+    margin: 0 1%;
+    float: left; }
 
-}
+  #logo-three-column {
+    width: 60%;
+    margin: 0 20%; }
 
-@media screen and (max-width: 980px) {
+  #alt-sidebar .widget {
+    width: 50%;
+    margin: 4% 25% 6%; }
 
-}
+  #content, #alt-sidebar {
+    padding-top: 320px; }
 
-@media screen and (max-width:768px) { /* for Tablets in Portrait Mode */
-
-	#four-column, #five-column { /* 4 & 5 columns side by side need to become single columns or elements just get too small! */
-		width: 48%;
-		margin:0 1%;
-		float:none;
-	}
-
-	#header-three-column { /* 3 columns side by side */
-		width:48%;
-		margin:0 1%;
-		float:left;
-	}
-
-	#logo-three-column { width:60%; margin: 0 20%; }
-
-	#alt-sidebar .widget {
-    		width: 50%;
-		margin: 4% 25% 6%;
-	}
-	#content, #alt-sidebar {
-		padding-top: 320px;
-	}
-
-
-	body.custom-background {
-    background-image: url('https://www.taukband.com/wp-content/uploads/2016/02/New-TAUK-Background.png');
+  body.custom-background {
+    background-image: url("https://www.taukband.com/wp-content/uploads/2016/02/New-TAUK-Background.png");
     background-repeat: no-repeat !important;
     background-position: center center;
     background-attachment: fixed !important;
-    background-size: cover !important;
-}
-
-}
-
-@media screen and (max-width:640px) { /* for Phones in Landscape Mode */
-
-	#two-column, #three-column { /* 2 & 3 columns side by side need to become single columns or elements just get too small! */ 
-		width:98%;
-		margin:0 1%;
-		float:none;
-	}
-
-}
-
-@media screen and (max-width:480px) { /* for Phones in Portrait Mode */
-
-
-}
-
-
+    background-size: cover !important; } }
+@media screen and (max-width: 640px) {
+  /* for Phones in Landscape Mode */
+  #two-column, #three-column {
+    /* 2 & 3 columns side by side need to become single columns or elements just get too small! */
+    width: 98%;
+    margin: 0 1%;
+    float: none; } }
+@media screen and (max-width: 480px) {
+  /* for Phones in Portrait Mode */ }
 /* Theme Fixes */
 .intro-copy-box-wrap, .intro-copy-box-wrap-nobg {
-    display:none;
-}
+  display: none; }
 
 #site-heading {
-    margin:0;
-    padding:0;
-}
+  margin: 0;
+  padding: 0; }
 
 .site-logo img {
-    max-width: 300px;
-}
+  max-width: 300px; }
 
-#site-generator { padding-bottom: 0; }
+#site-generator {
+  padding-bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */

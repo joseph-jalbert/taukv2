@@ -1,0 +1,16 @@
+//Setttings
+
+$gutter: 50px;
+
+
+//Custom styles
+
+
+//Highlight Reel
+#highlights-widget-area {
+  margin: 0 $gutter;
+
+  .widget-title {
+    display: none;
+  }
+}
