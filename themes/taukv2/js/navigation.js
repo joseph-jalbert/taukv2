@@ -12,8 +12,8 @@
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button ) {
+	mobileMenuToggle = container.getElementsByClassName( 'menu-toggle' )[0];
+	if ( 'undefined' === typeof mobileMenuToggle ) {
 		return;
 	}
 
@@ -30,7 +30,7 @@
 		menu.className += ' nav-menu';
 	}
 
-	button.onclick = function() {
+	mobileMenuToggle.onclick = function() {
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );

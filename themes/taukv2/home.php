@@ -20,9 +20,9 @@ get_header(); ?>
   $shortcode .= '[/slider]';
 ?>
 
-<aside id="highlights-widget-area" class="widget widget_text" role="complementary">
+<!-- <aside id="highlights-widget-area" class="widget widget_text" role="complementary">
   <div class="textwidget"><?php echo do_shortcode($shortcode); ?></div>
-</aside>
+</aside> -->
 
 <aside id="tour-widget-area" class="widget widget_text" role="complementary">
   <div class="widget-title"><a href="/shows" title="TOUR">UPCOMING SHOWS</a></div>
@@ -119,6 +119,11 @@ get_header(); ?>
             </td>
             <td>
               <span class="city-state"><?php echo '<a href="' . $googlemaps . '" target="_blank">' . $show['city-state']; ?></a></spacing>
+            </td>
+            <td>
+              <span class="share-show facebook"><a href="#">Facebook</a></span>
+              <span class="share-show twitter"><a href="#">Twitter</a></span>
+              <span class="share-show email"><a href="#">Email</a></span>
             </td>
             <td>
               <span class="tickets-widget"><a href="<?php echo $show['tickets-link']; ?>" target="_blank"><img src="https://www.taukband.com/wp-content/uploads/2016/02/ticketswidgetbutton.png" width="100px"></a></span>
