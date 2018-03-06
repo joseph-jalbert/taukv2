@@ -42,9 +42,53 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 #highlights-widget-area {
-  margin: 0 50px; }
+  margin: 0 75px; }
   #highlights-widget-area .widget-title {
     display: none; }
+
+.section-header {
+  border-bottom: solid 1px black;
+  height: 72px; }
+  .section-header .section-main {
+    width: 50%;
+    float: left; }
+  .section-header .see-more {
+    float: right;
+    margin-top: 35px;
+    font-size: 20px;
+    color: black; }
+
+#tour-widget-area {
+  margin: 0 75px; }
+  #tour-widget-area #homepage-tour-widget thead td {
+    font-size: 22px; }
+  #tour-widget-area #homepage-tour-widget .tour-widget {
+    border-top: 1px solid #888a8d;
+    border-bottom: 1px solid #888a8d;
+    height: 55px; }
+    #tour-widget-area #homepage-tour-widget .tour-widget .share-show {
+      font-size: 22px; }
+    #tour-widget-area #homepage-tour-widget .tour-widget .tickets-widget {
+      font-size: 30px;
+      margin-left: 16px; }
+
+.show-downloads {
+  margin: 0 75px; }
+  .show-downloads .section-main {
+    float: none;
+    display: inline-block; }
+  .show-downloads .show-slide {
+    display: inline-block;
+    width: 25%;
+    overflow: hidden; }
+    .show-downloads .show-slide img {
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+    .show-downloads .show-slide:hover img {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
 
 /*--------------------------------------------------------------
 # Normalize
@@ -418,10 +462,8 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
-
-a:visited {
-  color: purple; }
+  color: #404040;
+  text-decoration: none; }
 
 a:hover, a:focus, a:active {
   color: midnightblue; }

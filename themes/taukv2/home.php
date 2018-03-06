@@ -25,7 +25,10 @@ get_header(); ?>
 </aside> -->
 
 <aside id="tour-widget-area" class="widget widget_text" role="complementary">
-  <div class="widget-title"><a href="/shows" title="TOUR">UPCOMING SHOWS</a></div>
+  <div class="section-header">
+    <h1 class="section-main">UPCOMING SHOWS</h1>
+    <div class="see-more"><a href="/shows" title="TOUR">SEE ALL SHOWS</a></div>
+  </div>
   <div class="textwidget">
     <?php
       $args = array( 'post_type' => 'shows', 'posts_per_page' => '1000', 'orderby'=>'title','order'=>'DESC' );
@@ -80,7 +83,13 @@ get_header(); ?>
       ?>
       <div id="homepage-tour-widget">
         <table>
-          <thead></thead>
+          <thead>
+            <td>Date</td>
+            <td>Venue</td>
+            <td>Location</td>
+            <td>Share</td>
+            <td>Tickets</td>
+          </thead>
           <tbody>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <?php
@@ -115,18 +124,21 @@ get_header(); ?>
                     echo ' - ' . $fixenddate;
                   }
                 ?></strong>
-              </span><?php echo $show['headliner']; ?>
+              </span>
+            </td>
+            <td>
+              <span class="vanue"><?php echo $show['headliner']; ?></span>
             </td>
             <td>
               <span class="city-state"><?php echo '<a href="' . $googlemaps . '" target="_blank">' . $show['city-state']; ?></a></spacing>
             </td>
             <td>
-              <span class="share-show facebook"><a href="#">Facebook</a></span>
-              <span class="share-show twitter"><a href="#">Twitter</a></span>
-              <span class="share-show email"><a href="#">Email</a></span>
+              <span class="share-show facebook"><a href="#"><i class="fab fa-facebook-square"></i></a></span>
+              <span class="share-show twitter"><a href="#"><i class="fab fa-twitter-square"></i></a></span>
+              <span class="share-show email"><a href="#"><i class="fas fa-envelope-square"></i></a></span>
             </td>
             <td>
-              <span class="tickets-widget"><a href="<?php echo $show['tickets-link']; ?>" target="_blank"><img src="https://www.taukband.com/wp-content/uploads/2016/02/ticketswidgetbutton.png" width="100px"></a></span>
+              <span class="tickets-widget"><a href="<?php echo $show['tickets-link']; ?>" target="_blank"><i class="fas fa-ticket-alt"></i></a></span>
             </td>
           </tr>
         <?php endif; ?>
@@ -138,6 +150,27 @@ get_header(); ?>
     <?php wp_reset_postdata(); ?>
   </div>
 </aside>
+
+<div class="show-downloads">
+    <div class="section-header">
+        <h1 class="section-main">LIVE DOWNLOADS</h1>
+        <div class="see-more"><a href="/shows" title="TOUR">ALL SHOWS</a></div>
+  </div>
+    <?php
+      $live_shows = get_option('livedownloadsslides',false);
+
+      foreach ( array_slice($live_shows, 0, 4) as $show ) {
+        $link = $show['link-url'];
+        $imgSRC = wp_get_attachment_URL($show['image']);
+        $title = $show['title'];
+
+        echo '<div class="show-slide">';
+            echo '<a target="_blank" href="' . $link . '" alt="' . $title . '"><img src="' . $imgSRC . '"></img></a>';
+        echo '</div>';
+      }
+    ?>
+
+</div>
 
 
 <?php

@@ -1,9 +1,7 @@
-//Setttings
+//Settings
 
-$gutter: 50px;
+$gutter: 75px;
 
-
-//Custom styles
 
 
 //Highlight Reel
@@ -13,4 +11,74 @@ $gutter: 50px;
   .widget-title {
     display: none;
   }
+}
+
+//General homepage
+.section-header {
+    border-bottom: solid 1px black;
+    height: 72px;
+
+    .section-main {
+        width: 50%;
+        float: left;
+    }
+    .see-more {
+        float: right;
+        margin-top: 35px;
+        font-size: 20px;
+        color: black;
+    }
+}
+
+
+//Tour Dates
+
+#tour-widget-area {
+    margin: 0 $gutter;
+
+
+
+    #homepage-tour-widget {
+        thead td {
+          font-size: 22px;
+        }
+        .tour-widget {
+            border-top: 1px solid #888a8d;
+            border-bottom: 1px solid #888a8d;
+            height: 55px;
+
+            .share-show {
+                font-size: 22px;
+            }
+
+            .tickets-widget {
+                font-size: 30px;
+                margin-left: 16px;
+            }
+        }
+    }
+}
+
+.show-downloads {
+    margin: 0 $gutter;
+
+    .section-main {
+        float: none;
+        display: inline-block;
+    }
+    .show-slide {
+        display: inline-block;
+        width: 25%;
+        overflow: hidden;
+        img {
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        &:hover img {
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+    }
 }
