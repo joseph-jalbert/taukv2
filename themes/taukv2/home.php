@@ -30,44 +30,7 @@ get_header(); ?>
     <div class="see-more"><a href="/shows" title="TOUR">SEE ALL SHOWS</a></div>
   </div>
   <div class="textwidget">
-    <?php
-      $args = array( 'post_type' => 'shows', 'posts_per_page' => '1000', 'orderby'=>'title','order'=>'DESC' );
-      $loop = new WP_Query( $args );
-    ?>
-    <?php if ( $loop->have_posts() ) : ?>
 
-      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-        <?php
-          $show_array = get_post_meta(get_the_ID(),'showdetails',true);
-          $show = $show_array[0];
-          $showdate = $show['show-date'];
-          $showdate_array = explode('-',$showdate);
-          $day = $showdate_array[0];
-          $month = $showdate_array[1];
-          $year = $showdate_array[2];
-          $fixdate = "$year$month$day";
-          $enddate = $show['end-date'];
-          $enddate_array = explode('-',$enddate);
-          $endday = $enddate_array[0];
-          $endmonth = $enddate_array[1];
-          $endyear = substr($enddate_array[2],2);
-          $fixenddate = "$endmonth/$endday/$endyear";
-          $today = date('d');
-          $thismonth = date('m');
-          $thisyear = date('Y');
-          $todaysdate = "$thisyear$thismonth$today";
-          if ( $todaysdate <= $fixdate || $todaysdate <= $fixenddate ) {
-            $val = "upcoming";
-          }
-          else {
-            $val = "past";
-        }
-          update_post_meta(get_the_ID(),'showstatus',$val);
-          update_post_meta(get_the_ID(),'orderbyshowdate',$fixdate);
-        ?>
-      <?php endwhile; ?>
-    <?php endif; ?>
-    <?php rewind_posts(); ?>
     <?php $args = array(
       'post_type' => 'shows',
       'posts_per_page' => '1000',
@@ -75,12 +38,9 @@ get_header(); ?>
       'meta_key' => 'orderbyshowdate',
       'order' => 'ASC'
     );
-    $loop = new WP_Query( $args ); ?>
-    <?php if ( $loop->have_posts() ) : ?>
-      <?php /* Adds Odd/Even Classes */
-        $i=0;
-        $class=array('odd','even');
-      ?>
+    $loop = new WP_Query( $args );
+
+    if ( $loop->have_posts() ) : ?>
       <div id="homepage-tour-widget">
         <table>
           <thead>
@@ -91,7 +51,9 @@ get_header(); ?>
             <td>Tickets</td>
           </thead>
           <tbody>
-      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+      <?php
+      $counter = 1;
+      while ( $loop->have_posts() && $counter < 11) : $loop->the_post(); ?>
         <?php
           $showstatus = get_post_meta(get_the_ID(),'showstatus',true);
           $show_array = get_post_meta(get_the_ID(),'showdetails',true);
@@ -141,13 +103,15 @@ get_header(); ?>
               <span class="tickets-widget"><a href="<?php echo $show['tickets-link']; ?>" target="_blank"><i class="fas fa-ticket-alt"></i></a></span>
             </td>
           </tr>
-        <?php endif; ?>
-      <?php endwhile; ?>
+        <?php
+            $counter++;
+            endif;
+        endwhile; ?>
           </tbody>
         </table>
       </div>
-    <?php endif; ?>
-    <?php wp_reset_postdata(); ?>
+    <?php endif;
+    wp_reset_postdata(); ?>
   </div>
 </aside>
 
@@ -178,7 +142,7 @@ while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only ins
     </div><!-- .entry-content-page -->
 
 <?php
-endwhile; 
+endwhile;
 
 do_shortcode('[instagram-feed');
 

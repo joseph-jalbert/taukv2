@@ -42,7 +42,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 #highlights-widget-area {
-  margin: 0 75px; }
+  margin: 0 7%; }
   #highlights-widget-area .widget-title {
     display: none; }
 
@@ -59,7 +59,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     color: black; }
 
 #tour-widget-area {
-  margin: 0 75px; }
+  margin: 0 7%; }
   #tour-widget-area #homepage-tour-widget thead td {
     font-size: 22px; }
   #tour-widget-area #homepage-tour-widget .tour-widget {
@@ -73,7 +73,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
       margin-left: 16px; }
 
 .show-downloads {
-  margin: 0 75px; }
+  margin: 0 7%; }
   .show-downloads .section-main {
     float: none;
     display: inline-block; }
