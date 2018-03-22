@@ -15,15 +15,15 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'taukv2' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'taukv2' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'taukv2' ), 'taukv2', '<a href="http://underscores.me/">Underscores.me</a>' );
-			?>
+			<div style="width: 50%; margin: 0 25%;">
+				<div class="social-icon"><a title="TAUK on Soundcloud" href="https://soundcloud.com/tauk" target="_blank" rel="noopener"><img src="https://www.taukband.com/wp-content/uploads/2018/03/soundcloud.png" width="100%" /></a></div>
+				<div class="social-icon"><a title="Buy TAUK's Music on Google Play Music" href="https://play.google.com/store/music/artist/Tauk?id=Agnjssxcm4qbgpdo5wbsursweoq" target="_blank" rel="noopener"><img src="https://www.taukband.com/wp-content/uploads/2018/03/googleplay.png" width="100%" /></a></div>
+				<div class="social-icon"><a title="Buy TAUK's Music on iTunes" href="https://itunes.apple.com/us/artist/tauk/id197690060" target="_blank" rel="noopener"><img src="https://www.taukband.com/wp-content/uploads/2018/03/apple-logo_318-40184.jpg" width="100%" /></a></div>
+				<div class="social-icon"><a title="TAUK on Instagram" href="https://www.instagram.com/taukband" target="_blank" rel="noopener"><img src="https://www.taukband.com/wp-content/uploads/2018/03/Black_Instagram_icon.svg_.png" width="100%" /></a></div>
+				<div class="social-icon"><a title="TAUK on YouTube" href="https://www.youtube.com/user/Taukband" target="_blank" rel="noopener"><img src="https://www.taukband.com/wp-content/uploads/2018/03/youtube.png" width="100%" /></a></div>
+				<div class="social-icon"><a title="TAUK on Twitter" href="https://www.twitter.com/taukband" target="_blank" rel="noopener"><img src="https://www.taukband.com/wp-content/uploads/2018/03/twitter.png" width="100%" /></a></div>
+				<div class="social-icon"><a title="TAUK on Facebook" href="https://www.facebook.com/taukband" target="_blank" rel="noopener"><img src="https://www.taukband.com/wp-content/uploads/2018/03/06-facebook-512.png" width="100%" /></a></div>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

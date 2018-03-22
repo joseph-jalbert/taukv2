@@ -1,12 +1,38 @@
-//Settings
+//Sitewide
 
 $gutter: 7%;
 
+.entry-title {
+    text-align: center;
+}
+.site-content,
+.site-main {
+    margin: 0 $gutter;
+}
 
+#sneaky {
+    display: none;
+}
+
+//Navigation
+.main-navigation {
+    &.toggled {
+        width: 100%;
+        margin-top: 0;
+    }
+    .menu-toggle {
+        position: absolute !important;
+        right: 0;
+        top: 140px;
+    }
+    .sub-menu {
+        background-color: black;
+    }
+}
 
 //Highlight Reel
 #highlights-widget-area {
-  margin: 0 $gutter;
+
 
   .widget-title {
     display: none;
@@ -34,9 +60,6 @@ $gutter: 7%;
 //Tour Dates
 
 #tour-widget-area {
-    margin: 0 $gutter;
-
-
 
     #homepage-tour-widget {
         thead td {
@@ -59,8 +82,9 @@ $gutter: 7%;
     }
 }
 
+//Downloads
+
 .show-downloads {
-    margin: 0 $gutter;
 
     .section-main {
         float: none;
@@ -84,4 +108,26 @@ $gutter: 7%;
 }
 
 .instagram-feed {
+}
+
+//About Page
+
+#four-column, #header-four-column {
+    width: 23%;
+    margin: 0 1%;
+    float: left;
+}
+
+.endorsements {
+    margin-top: 1px solid black;
+    padding-top: 30px;
+    font-style: italic;
+}
+
+//Footer
+.social-icon {
+    width: 12%;
+    margin: 10px 1.14% 5px;
+    float: right;
+    opacity: 1;
 }
