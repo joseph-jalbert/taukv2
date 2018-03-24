@@ -131,10 +131,17 @@ $gutter: 7%;
     font-style: italic;
 }
 
-//Footer
-.social-icon {
-    width: 12%;
-    margin: 10px 1.14% 5px;
-    float: right;
-    opacity: 1;
+//share icons
+.widget-area {
+    position: fixed;
+    top: 172px;
+    left: 0;
+    width: 50px;
+    .widget-title {
+        display: none;
+    }
+    .social-icon {
+        margin: 10px 1.14% 5px;
+        opacity: 1;
+    }
 }

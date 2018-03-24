@@ -147,4 +147,6 @@ endwhile;
 do_shortcode('[instagram-feed');
 
 wp_reset_postdata();
-get_footer(); ?>
+get_sidebar();
+// get_footer(); 
+?>

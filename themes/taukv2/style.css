@@ -121,11 +121,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   padding-top: 30px;
   font-style: italic; }
 
-.social-icon {
-  width: 12%;
-  margin: 10px 1.14% 5px;
-  float: right;
-  opacity: 1; }
+.widget-area {
+  position: fixed;
+  top: 172px;
+  left: 0;
+  width: 50px; }
+  .widget-area .widget-title {
+    display: none; }
+  .widget-area .social-icon {
+    margin: 10px 1.14% 5px;
+    opacity: 1; }
 
 /*--------------------------------------------------------------
 # Normalize
