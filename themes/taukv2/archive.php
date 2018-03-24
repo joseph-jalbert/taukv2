@@ -9,11 +9,11 @@
 
 get_header(); ?>
 <header class="page-header">
-	<h1 class="page-title"><h2>TAUK Tour <?php echo date('Y'); ?><hr></h2>Tour Dates, Venue Details & Tickets</h1>
+
 </header>
 <aside id="tour-widget-area" class="widget widget_text" role="complementary">
   <div class="section-header">
-	<h1 class="section-main">UPCOMING SHOWS</h1>
+	<h1 class="page-title">TAUK Tour <?php echo date('Y'); ?></h1>
   </div>
   <div class="textwidget">
 

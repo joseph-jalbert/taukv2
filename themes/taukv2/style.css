@@ -41,25 +41,32 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 .entry-title {
   text-align: center; }
 
 .site-content,
 .site-main {
-  margin: 0 7%; }
+  padding: 0 7%;
+  font-family: Ubuntu; }
 
 #sneaky {
   display: none; }
 
-.main-navigation.toggled {
-  width: 100%;
-  margin-top: 0; }
-.main-navigation .menu-toggle {
-  position: absolute !important;
-  right: 0;
-  top: 140px; }
-.main-navigation .sub-menu {
-  background-color: black; }
+.main-navigation {
+  font-family: Ubuntu; }
+  .main-navigation.toggled {
+    width: 100%;
+    margin-top: 0; }
+  .main-navigation .menu-toggle {
+    position: absolute !important;
+    right: 0;
+    top: 140px; }
+  .main-navigation .sub-menu {
+    background-color: black;
+    padding-top: 20px; }
+    .main-navigation .sub-menu li {
+      padding-bottom: 15px; }
 
 #highlights-widget-area .widget-title {
   display: none; }
