@@ -3,21 +3,29 @@
 
 $gutter: 7%;
 
-.entry-title {
+.entry-title,
+.center {
     text-align: center;
 }
 .site-content,
 .site-main {
     padding: 0 $gutter;
     font-family: Ubuntu;
+    // background-color: #CCCCCC;
+    background-image: url('/wp-content/themes/taukv2/img/dust_scratches.png');
 }
 
 #sneaky {
     display: none;
 }
 
+a:hover {
+    color: #FED745 !important;
+}
+
 //Navigation
 .main-navigation {
+
     font-family: Ubuntu;
     &.toggled {
         width: 100%;
@@ -129,6 +137,21 @@ $gutter: 7%;
     margin-top: 1px solid black;
     padding-top: 30px;
     font-style: italic;
+}
+
+//Contact Page
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    span {
+        font-weight: 900;
+    }
+    .contact-block {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
 }
 
 //share icons

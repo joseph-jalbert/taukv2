@@ -42,16 +42,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
-.entry-title {
+.entry-title,
+.center {
   text-align: center; }
 
 .site-content,
 .site-main {
   padding: 0 7%;
-  font-family: Ubuntu; }
+  font-family: Ubuntu;
+  background-image: url("/wp-content/themes/taukv2/img/dust_scratches.png"); }
 
 #sneaky {
   display: none; }
+
+a:hover {
+  color: #FED745 !important; }
 
 .main-navigation {
   font-family: Ubuntu; }
@@ -120,6 +125,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   margin-top: 1px solid black;
   padding-top: 30px;
   font-style: italic; }
+
+.contact {
+  width: 80%;
+  margin: 0 auto; }
+  .contact span {
+    font-weight: 900; }
+  .contact .contact-block {
+    text-align: center; }
+  .contact h2 {
+    text-align: center; }
 
 .widget-area {
   position: fixed;
