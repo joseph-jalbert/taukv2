@@ -11,7 +11,6 @@ $gutter: 7%;
 .site-main {
     padding: 0 $gutter;
     font-family: Ubuntu;
-    // background-color: #CCCCCC;
     background-image: url('/wp-content/themes/taukv2/img/dust_scratches.png');
 }
 
@@ -47,11 +46,15 @@ a:hover {
 
 //Highlight Reel
 #highlights-widget-area {
-
-
-  .widget-title {
-    display: none;
-  }
+    padding-top: 50px;
+    width: 600px;
+    margin: 0 auto;
+    .bx-wrapper, .bx-viewport {
+        height: 600px !important;
+    }
+    .widget-title {
+        display: none;
+    }
 }
 
 //General homepage
@@ -97,6 +100,21 @@ a:hover {
     }
 }
 
+//Music Page
+.album-links {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    .buyalbum {
+        display: inline-block;
+    }
+}
+
+.album-iframe {
+    width: 700px;
+    margin: 0 auto;
+}
+
 //Downloads
 
 .show-downloads {
@@ -134,12 +152,17 @@ a:hover {
 }
 
 .endorsements {
-    margin-top: 1px solid black;
+    margin-top: 0 auto;
     padding-top: 30px;
     font-style: italic;
+    text-align: center;
 }
 
 //Contact Page
+
+h2.center {
+    margin: 0;
+}
 .contact {
     width: 80%;
     margin: 0 auto;

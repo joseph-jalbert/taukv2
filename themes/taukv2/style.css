@@ -73,8 +73,14 @@ a:hover {
     .main-navigation .sub-menu li {
       padding-bottom: 15px; }
 
-#highlights-widget-area .widget-title {
-  display: none; }
+#highlights-widget-area {
+  padding-top: 50px;
+  width: 600px;
+  margin: 0 auto; }
+  #highlights-widget-area .bx-wrapper, #highlights-widget-area .bx-viewport {
+    height: 600px !important; }
+  #highlights-widget-area .widget-title {
+    display: none; }
 
 .section-header {
   border-bottom: solid 1px black;
@@ -100,6 +106,17 @@ a:hover {
     font-size: 30px;
     margin-left: 16px; }
 
+.album-links {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%; }
+  .album-links .buyalbum {
+    display: inline-block; }
+
+.album-iframe {
+  width: 700px;
+  margin: 0 auto; }
+
 .show-downloads .section-main {
   float: none;
   display: inline-block; }
@@ -122,9 +139,13 @@ a:hover {
   float: left; }
 
 .endorsements {
-  margin-top: 1px solid black;
+  margin-top: 0 auto;
   padding-top: 30px;
-  font-style: italic; }
+  font-style: italic;
+  text-align: center; }
+
+h2.center {
+  margin: 0; }
 
 .contact {
   width: 80%;

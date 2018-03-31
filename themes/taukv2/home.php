@@ -20,9 +20,9 @@ get_header(); ?>
   $shortcode .= '[/slider]';
 ?>
 
-<!-- <aside id="highlights-widget-area" class="widget widget_text" role="complementary">
+<aside id="highlights-widget-area" class="widget widget_text" role="complementary">
   <div class="textwidget"><?php echo do_shortcode($shortcode); ?></div>
-</aside> -->
+</aside>
 
 <aside id="tour-widget-area" class="widget widget_text" role="complementary">
   <div class="section-header">
@@ -148,5 +148,5 @@ do_shortcode('[instagram-feed');
 
 wp_reset_postdata();
 get_sidebar();
-// get_footer(); 
+get_footer();
 ?>
