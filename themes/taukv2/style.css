@@ -58,7 +58,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 a:hover {
   color: #FED745 !important; }
 
+img.custom-logo {
+  margin-top: 25px !important; }
+
 .main-navigation {
+  margin-top: 56px !important;
   font-family: Ubuntu; }
   .main-navigation.toggled {
     width: 100%;
@@ -167,6 +171,17 @@ h2.center {
   .widget-area .social-icon {
     margin: 10px 1.14% 5px;
     opacity: 1; }
+
+.site-footer {
+  font-family: Ubuntu;
+  height: 100px;
+  background: black;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 30px; }
+  .site-footer a {
+    color: #FFFFFF;
+    display: block; }
 
 /*--------------------------------------------------------------
 # Normalize

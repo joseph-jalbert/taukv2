@@ -14,7 +14,8 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-
+		©TAUK MMXVIII
+		<a href="/contact">contact</a>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
