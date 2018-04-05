@@ -23,20 +23,38 @@ a:hover {
 }
 
 //Navigation
+a.custom-logo-link {
+    @media screen and (max-width: 600px) {
+        margin-left: calc(50% - 131px);
+    }
+}
 img.custom-logo {
     margin-top: 25px !important;
+    @media screen and (max-width: 600px) {
+        margin-left: 0 !important;
+    }
+
 }
 .main-navigation {
     margin-top: 56px !important;
     font-family: Ubuntu;
+    @media screen and (max-width: 700px) {
+        margin-top: 32px !important;
+    }
+    @media screen and (max-width: 600px) {
+        margin-top: 0px !important;
+        li {
+            float: none !important;
+            text-align: center;
+        }
+    }
     &.toggled {
         width: 100%;
-        margin-top: 0;
     }
     .menu-toggle {
         position: absolute !important;
         right: 0;
-        top: 140px;
+        top: 65px;
     }
     .sub-menu {
         background-color: black;
@@ -84,34 +102,71 @@ img.custom-logo {
         margin-top: 35px;
         font-size: 20px;
         color: black;
+        font-style: italic;
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
     }
+}
+.see-more {
+    font-style: italic;
 }
 
 
 //Tour Dates
 
 #tour-widget-area {
+    .section-header {
+        @media screen and (max-width: 700px) {
+            border-bottom: none;
+            height: 50px;
+            h1 {
+                font-size: 18px;
+            }
+        }
+    }
 
     #homepage-tour-widget {
 
         thead td {
           font-size: 22px;
+          @media screen and (max-width: 700px) {
+              display: none;
+          }
         }
         .tour-widget {
             border-top: 1px solid #888a8d;
             border-bottom: 1px solid #888a8d;
             height: 55px;
+            @media screen and (max-width: 700px) {
+                font-size: 13px;
+                .opener-data,
+                .share-data {
+                    display: none;
+                }
+                .date-data {
+                    padding-right: 10px;
+                }
+            }
 
             .share-show {
                 font-size: 22px;
+                @media screen and (max-width: 700px) {
+                    font-size: 14px;
+                }
             }
 
             .opener {
                 font-size: 13px;
+                @media screen and (max-width: 700px) {
+                }
             }
 
             .tickets-widget {
                 font-size: 30px;
+                @media screen and (max-width: 700px) {
+                    font-size: 20px;
+                }
                 margin-left: 16px;
             }
         }
@@ -131,6 +186,9 @@ img.custom-logo {
 .album-iframe {
     width: 700px;
     margin: 0 auto;
+    @media screen and (max-width: 700px) {
+        width: 100%;
+    }
 }
 
 //Downloads
@@ -145,6 +203,9 @@ img.custom-logo {
         display: inline-block;
         width: 25%;
         overflow: hidden;
+        @media screen and (max-width: 700px) {
+            width: 50%;
+        }
         img {
             -moz-transition: all 0.3s;
             -webkit-transition: all 0.3s;
@@ -167,6 +228,23 @@ img.custom-logo {
     width: 23%;
     margin: 0 1%;
     float: left;
+}
+
+@media screen and (max-width: 700px) {
+    .bx-wrapper img {
+       width: 325px;
+       height: 220px;
+   }
+}
+.bx-wrapper, .bx-viewport {
+    @media screen and (max-width: 700px) {
+        height: 220px !important;
+        width: 325px;
+    }
+    max-height: 600px !important;
+}
+.widget-title {
+    display: none;
 }
 
 .endorsements {
@@ -196,6 +274,9 @@ h2.center {
 }
 
 //share icons
+.widget-title {
+    display: none;
+}
 .site-info {
     >div {
         width: 50%;
@@ -205,9 +286,7 @@ h2.center {
     top: 172px;
     left: 0;
     width: 50px;
-    .widget-title {
-        display: none;
-    }
+
     .social-icon {
         margin: 10px 1.14% 5px;
         opacity: 1;
@@ -246,5 +325,8 @@ h2.center {
     a {
         color: #FFFFFF;
         display: block;
+    }
+    @media screen and (max-width: 700px) {
+        height: 130px;
     }
 }

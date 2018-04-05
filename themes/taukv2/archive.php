@@ -65,7 +65,7 @@ get_header(); ?>
 		?>
 		<?php if ( $showstatus != 'past' ) : ?>
 					  <tr class="<?php echo $class[$i++%2]; ?> tour-widget">
-			<td>
+			<td class="date-data">
 			  <span class="red-date">
 				<?php
 				  echo $fixdate;
@@ -81,10 +81,10 @@ get_header(); ?>
 			<td>
 			  <span class="city-state"><?php echo '<a href="' . $googlemaps . '" target="_blank">' . $show['city-state']; ?></a></spacing>
 			</td>
-			<td>
+			<td class="opener-data">
 				<span class="opener"><?php echo $opener; ?></span>
 			</td>
-			<td>
+			<td class="share-data">
 			  <span class="share-show facebook"><a href="#"><i class="fab fa-facebook-square"></i></a></span>
 			  <span class="share-show twitter"><a href="#"><i class="fab fa-twitter-square"></i></a></span>
 			  <span class="share-show email"><a href="#"><i class="fas fa-envelope-square"></i></a></span>
