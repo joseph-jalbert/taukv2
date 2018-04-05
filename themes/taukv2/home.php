@@ -27,7 +27,7 @@ get_header(); ?>
 <aside id="tour-widget-area" class="widget widget_text" role="complementary">
   <div class="section-header">
     <h1 class="section-main">UPCOMING SHOWS</h1>
-    <div class="see-more"><a href="/shows" title="TOUR">SEE ALL SHOWS</a></div>
+    <div class="see-more"><a href="/shows" title="TOUR">ALL UPCOMING SHOWS</a></div>
   </div>
   <div class="textwidget">
 
@@ -47,6 +47,7 @@ get_header(); ?>
             <td>Date</td>
             <td>Venue</td>
             <td>Location</td>
+            <td></td>
             <td>Share</td>
             <td>Tickets</td>
           </thead>
@@ -70,6 +71,7 @@ get_header(); ?>
           $endmonth = $enddate_array[1];
           $endyear = substr($enddate_array[2],2);
           $fixenddate = "$endmonth/$endday/$endyear";
+          $opener =$show['opening-bands'];
           $location = $show['city-state'];
           $location_array = explode(' ', trim($location) );
           $city = $location_array[0];
@@ -95,6 +97,9 @@ get_header(); ?>
               <span class="city-state"><?php echo '<a href="' . $googlemaps . '" target="_blank">' . $show['city-state']; ?></a></spacing>
             </td>
             <td>
+                <span class="opener"><?php echo $opener; ?></span>
+            </td>
+            <td>
               <span class="share-show facebook"><a href="#"><i class="fab fa-facebook-square"></i></a></span>
               <span class="share-show twitter"><a href="#"><i class="fab fa-twitter-square"></i></a></span>
               <span class="share-show email"><a href="#"><i class="fas fa-envelope-square"></i></a></span>
@@ -109,6 +114,7 @@ get_header(); ?>
         endwhile; ?>
           </tbody>
         </table>
+        <span class="see-more"><a href="/shows" title="TOUR">ALL UPCOMING SHOWS</a></span>
       </div>
     <?php endif;
     wp_reset_postdata(); ?>
@@ -118,7 +124,7 @@ get_header(); ?>
 <div class="show-downloads">
     <div class="section-header">
         <h1 class="section-main">LIVE DOWNLOADS</h1>
-        <div class="see-more"><a href="/shows" title="TOUR">ALL SHOWS</a></div>
+        <div class="see-more"><a href="/shows" title="TOUR">ALL THE SHOWS</a></div>
   </div>
     <?php
       $live_shows = get_option('livedownloadsslides',false);

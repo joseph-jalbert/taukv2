@@ -33,6 +33,7 @@ get_header(); ?>
 			<td>Date</td>
 			<td>Venue</td>
 			<td>Location</td>
+			<td></td>
 			<td>Share</td>
 			<td>Tickets</td>
 		  </thead>
@@ -56,6 +57,7 @@ get_header(); ?>
 		  $endyear = substr($enddate_array[2],2);
 		  $fixenddate = "$endmonth/$endday/$endyear";
 		  $location = $show['city-state'];
+		  $opener =$show['opening-bands'];
 		  $location_array = explode(' ', trim($location) );
 		  $city = $location_array[0];
 		  $state = $location_array[1];
@@ -78,6 +80,9 @@ get_header(); ?>
 			</td>
 			<td>
 			  <span class="city-state"><?php echo '<a href="' . $googlemaps . '" target="_blank">' . $show['city-state']; ?></a></spacing>
+			</td>
+			<td>
+				<span class="opener"><?php echo $opener; ?></span>
 			</td>
 			<td>
 			  <span class="share-show facebook"><a href="#"><i class="fab fa-facebook-square"></i></a></span>
