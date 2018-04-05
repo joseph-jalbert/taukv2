@@ -124,7 +124,7 @@ get_header(); ?>
 <div class="show-downloads">
     <div class="section-header">
         <h1 class="section-main">LIVE DOWNLOADS</h1>
-        <div class="see-more"><a href="/shows" title="TOUR">ALL THE SHOWS</a></div>
+        <div class="see-more"><a target="_blank" href="http://www.nugs.net/tauk" title="TOUR">ALL THE SHOWS</a></div>
   </div>
     <?php
       $live_shows = get_option('livedownloadsslides',false);
