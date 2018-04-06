@@ -202,28 +202,28 @@ img.custom-logo {
     transform: scale(1.1); }
 
 .band-members {
-  text-align: center;
-  margin-top: 50px; }
+  text-align: center; }
   @media screen and (max-width: 700px) {
     .band-members {
-      font-size: 13px;
-      margin-top: 0; } }
+      font-size: 13px; } }
   .band-members #four-column, .band-members #header-four-column {
     width: 23%;
     margin: 0 1%;
     float: left; }
 
 .about-slider {
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 485px;
+  width: 620px; }
+  .about-slider .bx-wrapper img {
+    position: absolute;
+    top: 0; }
   @media screen and (max-width: 700px) {
     .about-slider {
       height: 250px;
-      width: 300px; }
-      .about-slider .bx-wrapper img {
-        position: absolute;
-        top: 0; } }
+      width: 300px; } }
   .about-slider .bx-wrapper, .about-slider .bx-viewport {
-    max-height: 600px !important; }
+    height: 418px !important; }
     @media screen and (max-width: 700px) {
       .about-slider .bx-wrapper, .about-slider .bx-viewport {
         height: 190px !important; } }
