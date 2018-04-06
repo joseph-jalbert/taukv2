@@ -19,7 +19,7 @@ $gutter: 7%;
 }
 
 a:hover {
-    color: #FED745 !important;
+    color: #267DD8 !important;
 }
 
 //Navigation
@@ -223,29 +223,46 @@ img.custom-logo {
 }
 
 //About Page
-
-#four-column, #header-four-column {
-    width: 23%;
-    margin: 0 1%;
-    float: left;
-}
-
-@media screen and (max-width: 700px) {
-    .bx-wrapper img {
-       width: 325px;
-       height: 220px;
-   }
-}
-.bx-wrapper, .bx-viewport {
+.band-members {
+    text-align: center;
+    margin-top: 50px;
     @media screen and (max-width: 700px) {
-        height: 220px !important;
-        width: 325px;
+        font-size: 13px;
+        margin-top: 0;
     }
-    max-height: 600px !important;
+
+    #four-column, #header-four-column {
+        width: 23%;
+        margin: 0 1%;
+        float: left;
+    }
+ }
+.about-slider {
+    // height: 600px;
+    margin: 0 auto;
+    @media screen and (max-width: 700px) {
+        height: 250px;
+        width: 300px;
+        .bx-wrapper img {
+           position: absolute;
+           top: 0;
+       }
+    }
+    .bx-wrapper, .bx-viewport {
+        @media screen and (max-width: 700px) {
+            height: 190px !important;
+        }
+        max-height: 600px !important;
+        // img {
+        //     position: absolute;
+        //     top: 0;
+        // }
+    }
+    .widget-title {
+        display: none;
+    }
 }
-.widget-title {
-    display: none;
-}
+
 
 .endorsements {
     margin-top: 0 auto;
@@ -261,6 +278,9 @@ h2.center {
 }
 .contact {
     width: 80%;
+    @media screen and (max-width: 700px) {
+        width: 100%;
+    }
     margin: 0 auto;
     span {
         font-weight: 900;

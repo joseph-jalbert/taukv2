@@ -56,7 +56,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   display: none; }
 
 a:hover {
-  color: #FED745 !important; }
+  color: #267DD8 !important; }
 
 @media screen and (max-width: 600px) {
   a.custom-logo-link {
@@ -199,24 +199,34 @@ img.custom-logo {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
 
-#four-column, #header-four-column {
-  width: 23%;
-  margin: 0 1%;
-  float: left; }
-
-@media screen and (max-width: 700px) {
-  .bx-wrapper img {
-    width: 325px;
-    height: 220px; } }
-.bx-wrapper, .bx-viewport {
-  max-height: 600px !important; }
+.band-members {
+  text-align: center;
+  margin-top: 50px; }
   @media screen and (max-width: 700px) {
-    .bx-wrapper, .bx-viewport {
-      height: 220px !important;
-      width: 325px; } }
+    .band-members {
+      font-size: 13px;
+      margin-top: 0; } }
+  .band-members #four-column, .band-members #header-four-column {
+    width: 23%;
+    margin: 0 1%;
+    float: left; }
 
-.widget-title {
-  display: none; }
+.about-slider {
+  margin: 0 auto; }
+  @media screen and (max-width: 700px) {
+    .about-slider {
+      height: 250px;
+      width: 300px; }
+      .about-slider .bx-wrapper img {
+        position: absolute;
+        top: 0; } }
+  .about-slider .bx-wrapper, .about-slider .bx-viewport {
+    max-height: 600px !important; }
+    @media screen and (max-width: 700px) {
+      .about-slider .bx-wrapper, .about-slider .bx-viewport {
+        height: 190px !important; } }
+  .about-slider .widget-title {
+    display: none; }
 
 .endorsements {
   margin-top: 0 auto;
@@ -230,6 +240,9 @@ h2.center {
 .contact {
   width: 80%;
   margin: 0 auto; }
+  @media screen and (max-width: 700px) {
+    .contact {
+      width: 100%; } }
   .contact span {
     font-weight: 900; }
   .contact .contact-block {
