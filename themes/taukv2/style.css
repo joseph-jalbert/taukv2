@@ -132,7 +132,7 @@ img.custom-logo {
 @media screen and (max-width: 700px) {
   #tour-widget-area .section-header {
     border-bottom: none;
-    height: 50px; }
+    height: 35px; }
     #tour-widget-area .section-header h1 {
       font-size: 18px; } }
 #tour-widget-area #homepage-tour-widget thead td {
@@ -151,7 +151,9 @@ img.custom-logo {
       #tour-widget-area #homepage-tour-widget .tour-widget .share-data {
         display: none; }
       #tour-widget-area #homepage-tour-widget .tour-widget .date-data {
-        padding-right: 10px; } }
+        padding-right: 10px; }
+      #tour-widget-area #homepage-tour-widget .tour-widget .location-data {
+        padding-left: 10px; } }
   #tour-widget-area #homepage-tour-widget .tour-widget .share-show {
     font-size: 22px; }
     @media screen and (max-width: 700px) {

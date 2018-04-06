@@ -91,9 +91,9 @@ get_header(); ?>
               </span>
             </td>
             <td>
-              <span class="vanue"><?php echo $show['headliner']; ?></span>
+              <span class="venue"><?php echo $show['headliner']; ?></span>
             </td>
-            <td>
+            <td class="location-data">
               <span class="city-state"><?php echo '<a href="' . $googlemaps . '" target="_blank">' . $show['city-state']; ?></a></spacing>
             </td>
             <td class="opener-data">
