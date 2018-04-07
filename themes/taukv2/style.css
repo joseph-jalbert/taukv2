@@ -140,6 +140,8 @@ img.custom-logo {
   @media screen and (max-width: 700px) {
     #tour-widget-area #homepage-tour-widget thead td {
       display: none; } }
+  #tour-widget-area #homepage-tour-widget thead td.details {
+    width: 25%; }
 #tour-widget-area #homepage-tour-widget .tour-widget {
   border-top: 1px solid #888a8d;
   border-bottom: 1px solid #888a8d;

@@ -47,7 +47,7 @@ get_header(); ?>
             <td>Date</td>
             <td>Venue</td>
             <td>Location</td>
-            <td></td>
+            <td class="details"></td>
             <td>Share</td>
             <td>Tickets</td>
           </thead>
@@ -81,23 +81,23 @@ get_header(); ?>
         <?php if ( $showstatus != 'past' ) : ?>
                       <tr class="<?php echo $class[$i++%2]; ?> tour-widget">
             <td class="date-data">
-              <span class="red-date">
+              <a href="<?php echo $show['tickets-link']; ?>" target="_blank"><span class="red-date">
                 <?php
                   echo $fixdate;
                   if ( $show['end-date'] != '' ) {
                     echo ' - ' . $fixenddate;
                   }
-                ?></strong>
+                ?></a>
               </span>
             </td>
             <td>
-              <span class="venue"><?php echo $show['headliner']; ?></span>
+              <a href="<?php echo $show['tickets-link']; ?>" target="_blank"><span class="venue"><?php echo $show['headliner']; ?></span></a>
             </td>
             <td class="location-data">
               <span class="city-state"><?php echo '<a href="' . $googlemaps . '" target="_blank">' . $show['city-state']; ?></a></spacing>
             </td>
             <td class="opener-data">
-                <span class="opener"><?php echo $opener; ?></span>
+                <a href="<?php echo $show['tickets-link']; ?>" target="_blank"><span class="opener"><?php echo $opener; ?></span></a>
             </td>
             <td class="share-data">
               <span class="share-show facebook"><a href="#"><i class="fab fa-facebook-square"></i></a></span>
