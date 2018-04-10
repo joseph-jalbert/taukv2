@@ -29,6 +29,42 @@ get_header(); ?>
     <h1 class="section-main">UPCOMING SHOWS</h1>
     <div class="see-more"><a href="/shows" title="TOUR">ALL UPCOMING SHOWS</a></div>
   </div>
+  <?php
+      // update postmeta for shows that are past
+    $args = array( 'post_type' => 'shows', 'posts_per_page' => '1000', 'orderby'=>'title','order'=>'DESC' );
+    $loop = new WP_Query( $args );
+
+    if ( $loop->have_posts() ) :
+        while ( $loop->have_posts() ) : $loop->the_post();
+            $show_array = get_post_meta(get_the_ID(),'showdetails',true);
+            $show = $show_array[0];
+            $showdate = $show['show-date'];
+            $showdate_array = explode('-',$showdate);
+            $day = $showdate_array[0];
+            $month = $showdate_array[1];
+            $year = $showdate_array[2];
+            $fixdate = "$year$month$day";
+            $enddate = $show['end-date'];
+            $enddate_array = explode('-',$enddate);
+            $endday = $enddate_array[0];
+            $endmonth = $enddate_array[1];
+            $endyear = substr($enddate_array[2],2);
+            $fixenddate = "$endmonth/$endday/$endyear";
+            $today = date('d');
+            $thismonth = date('m');
+            $thisyear = date('Y');
+            $todaysdate = "$thisyear$thismonth$today";
+            if ( $todaysdate <= $fixdate || $todaysdate <= $fixenddate ) {
+                $val = "upcoming";
+            }
+            else {
+                $val = "past";
+            }
+            update_post_meta(get_the_ID(),'showstatus',$val);
+            update_post_meta(get_the_ID(),'orderbyshowdate',$fixdate);
+         endwhile;
+     endif;
+     rewind_posts(); ?>
   <div class="textwidget">
 
     <?php $args = array(
