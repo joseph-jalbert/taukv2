@@ -91,6 +91,17 @@ img.custom-logo {
     padding-top: 20px; }
     .main-navigation .sub-menu li {
       padding-bottom: 15px; }
+    @media screen and (max-width: 600px) {
+      .main-navigation .sub-menu {
+        padding-top: 0;
+        background-color: black;
+        margin-left: 62px; }
+        .main-navigation .sub-menu li {
+          margin-left: -20px;
+          padding-bottom: 0; }
+          .main-navigation .sub-menu li a {
+            color: #267DD8;
+            width: unset; } }
 
 #highlights-widget-area {
   padding-top: 50px;
