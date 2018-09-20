@@ -21,6 +21,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
+	<!-- Global site tag (gtag.js) - Google Ads: 788190300 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-788190300"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-788190300'); </script>
+
+	<!-- Event snippet for Preorder conversion page --> <script> gtag('event', 'conversion', { 'send_to': 'AW-788190300/w0EbCLjJpokBENyo6_cC', 'transaction_id': '<?php echo session_id(); ?>' }); </script>
+
 	<?php wp_head(); ?>
 </head>
 
